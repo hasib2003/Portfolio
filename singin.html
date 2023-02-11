@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignIn.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navigationBar">
+        <div class='menuBar'>
+            <div class="mainLinks">
+                <ul>
+                    <li>
+                        <h2 style="margin: 0 30px ">
+                            Linnaeus University
+                        </h2>
+                    </li>
+                    <li>
+                        <a href="./home.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li  class="selected"> <a href="./singin.html">
+                            SIGNIN
+
+                        </a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn"  class="anchor" > 
+                                              ABOUT US
+                           
+                            <i class="fa fa-caret-dow"></i>
+                        </button>
+                    <div class="dropdown-content">
+                        <a class="anchor" href="https://www.instagram.com/hassanito.ali/?hl=af">Hassan Ali</a>
+                        <a class="anchor" href="https://mail.google.com/mail/u/1/#inbox?compose=new">Hasib Aslam</a>
+                    </div>
+                    </div>
+
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div>
+            <div class="navigationBar">
+                <div class='menuBar'>
+                    <div class="mainLinks">
+                        <ul>
+                            <li>
+                                <h2 style="margin: 0 30px ">
+                                    Linnaeus University
+                                </h2>
+                            </li>
+                            <li class="selected">
+                                <a href="">
+                                    HOME
+                                </a>
+                            </li>
+                            <li> <a href="./singin.html">
+                                    SIGNIN
+    
+                                </a>
+                            </li>
+                            <div class="dropdown">
+                                <button class="dropbtn" class="anchor">
+                                    SOCIAL MEDIA    
+    
+                                    <i class="fa fa-caret-dow"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                <a class="anchor" href="https://www.instagram.com/hassanito.ali/?hl=af">Hassan Ali</a>
+    
+                                    <a class="anchor" href="https://www.facebook.com/hasib.aslam.96">Hasib
+                                        Aslam</a>
+                                </div>
+                            </div>
+    
+                        </ul>
+                    </div>
+    
+    
+                    </ul>
+                </div>
+    
+    
+            </div>
+        </div>
+    <div class="signIn formContainer">
+    
+        <h1>
+            Sign In
+        </h1>
+
+        <form action="" class="form">
+            <h4>
+                Email
+            </h4>
+            <div class="input">
+
+
+                <input type="email" placeholder='Enter the email ' />
+            </div>
+
+            <h4>
+                Password
+            </h4>
+            <div class="input pass">
+
+                <input placeholder='Enter the password ' type="password" id="pass" onkeyup="passwordChecker(event)" />
+
+            </div>
+            <h5 class="hide" id="hide">valid</h5>
+            <h5 class="hide" id="display">not valid</h5>
+
+            <div class="fLinks">
+
+
+                <a href="http://localhost:3000/forget">
+                    Forgot your passowrd?
+                </a>
+                <a href="/signUp">
+                    Sign Up Now
+                </a>
+
+            </div>
+
+            <div class="buttonWrapper">
+                <button class="btn">
+                    Sign In
+                </button>
+            </div>
+
+
+        </form>
+
+    </div>
+    <script src="SignIn.js"></script>
+
+</body>
+
+</html>
