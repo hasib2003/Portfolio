@@ -1,21 +1,25 @@
 .formContainer {
 
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 5rem;
 
 }
 
 .signIn {
     height: 45vh;
     max-height: max-content;
-    width: 25vw;
+    width: 80vw;
+    flex-direction: row;
 }
-
+.signInMem{
+    background: #000;
+    width: 50%;
+}
 .formContainer h1 {
     background: #feb321;
     border-radius: 1rem;
@@ -24,19 +28,23 @@
     text-align: center;
 }
 
-.form {
-
-    margin: 0 auto;
+.formWrapper{
+    background: #000;
+}
+.form{
+    /* margin: 0 auto; */
+    /* background: #000; */
     height: 100%;
-    width: 60%;
+    width: 40%;
 
 }
+
 
 .form h4 {
     margin: 0;
     margin-top: 5%;
     margin-bottom: 3%;
-font-size: 1.2rem;
+    font-size: 1.2rem;
     padding: 0;
 }
 
@@ -47,18 +55,73 @@ font-size: 1.2rem;
     outline: none;
     border-radius: 1rem;
     outline: none;
-    width: 100%;
+    width: 60%;
     height: 11%;
 
+}
+
+.hideAnchor{
+    pointer-events: none;
 }
 
 .input input {
     background: none;
     border: none;
-    font-size: 1rem; padding: 0rem 0.5rem;
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
     height: 100%;
     outline: none;
 }
+
+
+@media screen and (min-width: 300px) and (max-width: 992px) {
+
+    .formContainer h1 {
+        font-size: 1.4rem;
+        border-radius: 0.5rem;
+
+    }
+
+    .signIn {
+
+        height: 50vh;
+        width: 90vw;
+        padding: 12px;
+
+
+
+
+    }
+
+    .form {
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .form h4 {
+        font-size: 1.1rem;
+    }
+
+    .input {
+        border: 1px solid;
+        width: 80%;
+        height: 8%;
+        border-radius: 5px;
+
+
+    }
+
+    .input input {
+
+        font-size: 0.7rem;
+
+    }
+
+
+}
+
 
 :focus {
     border: none;
@@ -127,30 +190,26 @@ font-size: 1.2rem;
     outline: none;
     color: #d8b03d;
     border-radius: 5px;
-    background:#feb321;
+    background: #feb321;
     color: black;
-  }
+}
 
 
-  #hide
-  {
+#hide {
     color: green;
-margin-top: 12px;
-  }
+    margin-top: 12px;
+}
 
-  #display
-  {
+#display {
     color: red;
     margin-top: 12px;
-  }
+}
 
-  .hide
-  {
+.hide {
     display: none;
-  }
+}
 
-  h5
-  {
+h5 {
     padding: 0;
-    margin:0;
-  }
+    margin: 0;
+}

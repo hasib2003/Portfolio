@@ -44,7 +44,6 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    font-weight: bold;
 }
 
 .dropbtn:hover {
@@ -112,7 +111,29 @@ body {
     justify-content: space-around;
     height: 50vh;
     width: 90vw;
-    /* background: brown; */
+}
+
+@media screen and (min-width: 300px) and (max-width: 992px) {
+
+  
+    .mainBox{
+        /* background: #000; */
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /* #interest
+     {
+        height: 60vh;
+    }
+    #skills
+     {
+        height: 60vh;
+    } */
+    
+
 }
 
 .graphics
@@ -123,14 +144,33 @@ body {
 
 }
 
+
+@media screen and (min-width: 300px) and (max-width: 992px) {
+
+    .graphics{
+        height: 30%;
+        width: 60%;
+    }
+    
+
+}
+
+
 #sBg{
     background:url("./skills.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-#abBg{
-    background:url("./Hassan.jpeg");
+
+#hasibBg{
+    background:url("./hasib.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#svBg{
+    background:url("./server.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -141,29 +181,100 @@ body {
     background-size: cover;
     background-position: center;
 }
+#sBg{
+    background:url("./skills.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#exBg{
+    background:url("./money.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#htBg{
+    background:url("./hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#fbBg{
+    background:url("./social.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .description{
     padding-left: 2rem;
-
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     height: 80%;
     width: 50%;
-    /* background: blue; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    /* justify-content: space-ev; */
 }
+
+@media screen and (min-width: 300px) and (max-width: 992px) {
+
+    .description{
+        height: 60%;
+        width: 95%;
+    }
+    
+
+}
+
+
 
 .textBox{
     width:70%;
+    font-size: 1.2rem;
+}
+
+.description a {
+    font-size: 1rem;
+    padding: 12px;
+    background: var(--btnYellow);
+    color: #000;
+    font-style: italic;
+    text-decoration: none;
+}
+.description a:hover{
+    font-size: 0.9rem;
+
+    font-weight: bold;
+}
+
+@media screen and (min-width: 300px) and (max-width: 992px) {
+
+    .textBox{
+        font-size: 1rem;
+        width:80%;
+
+
+    }
+    
+
 }
 .mainHead{
     background:#feb321;
-    font-size: 1.2rem;
-    padding: 1rem 1.2rem;
-    border-radius: 12px;
+    font-size: 1.4rem;
+    padding: 1rem 1.4rem;
+
 }
+
+@media screen and (min-width: 300px) and (max-width: 992px) {
+    
+    .mainHead{
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+    
+    }
+
+}
+
 
 
 .flex{
